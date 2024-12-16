@@ -14,7 +14,7 @@ Il sito è stato sviluppato utilizzando HTML, CSS, PHP e MySQL, con l’obiettiv
 - **Registrazione e Login:** Gli utenti possono registrarsi sulla piattaforma. In caso di errori durante la compilazioni il sistema mostrerà messaggi specifici. A registrazione avvenuta con successo è possibile fare l'accesso.
 - **Catalogo libri:** Sia gli utenti che visitatori possono visualizzare i libri nel catalogo e le loro schede.
 - **Prenotazioni:** Solo gli utenti registrati possono prenotare dei libri compilando il form.
-- **Gestione amministrativa:** L'amministratore è unico e ha il compito di aggiungere e rimuovere libri dal catalogo.
+- **Profilo amministratore:** L'amministratore è unico e ha il compito di aggiungere e rimuovere libri dal catalogo.
 - **Dashboard utenti:** Gli utenti registrati possono gestire le proprie prenotazioni.
 
 ## Installazione
