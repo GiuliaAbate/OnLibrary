@@ -1,0 +1,323 @@
+* {
+    box-sizing: border-box;
+    }
+
+/*header*/
+.container { /*menu di navigazione */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; 
+    background-color: rgb(148, 148, 212);
+}
+
+/*Il menu di navigazione diventa responsive*/
+@media (max-width: 800px) {
+    .container {
+        flex-direction: column; /*Quando lo schermo diminuisce il layout è su una colonna*/
+    }
+}
+
+.info{ /* div con nome e motto del sito*/
+    width: 30%;
+}
+
+#nome {
+    font-family: Georgia, arial, serif;
+    font-size: 30px;
+    position: relative;
+    }
+
+
+#motto {
+    font-family: Georgia, arial, serif;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    }
+
+
+.pagine{ /*div nel menu che contiene le pagine del sito a cui arrivare*/
+    width: 70%;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-left: 100px;
+}
+
+
+.pagine li {
+    display: inline;
+    padding: 10px;
+    font-family: Verdana, arial, sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+#ricerca {
+    width: 120px;
+    padding: 5px;
+    margin-right: 5px;
+}
+
+.accesso {
+    margin-right: 30px;
+    gap: 10px;
+    display: flex;
+    float: right;
+}
+
+.button {
+    display: inline-block; 
+    padding: 10px 20px; 
+    font-size: 16px; 
+    font-weight: bold; 
+    color: white;
+    background-color: #3045cc; 
+    border: 2px solid black;
+    border-radius: 5px; 
+    text-decoration: none; 
+    text-align: center;
+}
+
+.button:hover {
+    background-color: rgb(3, 3, 176);
+    color:white; 
+}
+
+a { color: black;
+    text-decoration: none;
+}
+a:hover {
+    color: rgb(3, 3, 176);
+}
+
+/*index.php*/
+main {
+	width: 70%;
+	padding: 10px;
+    float: left;
+    font-family: Verdana, arial, sans-serif;
+}
+
+
+#biblioteca{
+    float: right;
+	width: 35%;
+	padding-bottom: 10px;
+	padding-left: 30px
+}
+#scaffali{
+	float: right;
+	width: 35%;
+	padding-bottom: 10px;
+	padding-left: 30px;
+}
+
+aside {
+	width: 30%;
+	padding: 10px;
+	float: right;
+    font-family: Verdana, arial, sans-serif;
+    font-size: 15px;
+}
+
+/*Catalogo*/
+
+#catalogo {
+    padding: 10px;
+    font-family: Verdana, arial, sans-serif;
+    font-size: 25px;
+    margin-top: 30px;
+    margin-right: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#scheda {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-right: 20px;
+    text-align: center;
+}
+
+#libri {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: center;
+}
+
+#libri thead th {
+    background-color: #007BFF;
+    color: black;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+#libri tbody td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+#libri tbody tr:hover {
+    background-color: #e9f7ff;
+}
+
+#libri .link:hover {
+    color: #007BFF;
+}
+
+/* Stile per i pulsanti */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn-primary {
+    background-color: #3045cc;
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    background-color: rgb(3, 3, 176);
+    color:white; 
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    color: #ffffff;
+}
+
+/*Login e registrazione*/
+.modulo{
+    font-family: Verdana, arial, sans-serif;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-right: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+.campi input[type=text]{
+    width: 20%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.campi input[type=password]{
+    width: 20%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+/*Profilo utente*/
+.credenziali{
+    width: 70%;
+	padding: 10px;
+    font-family: Verdana, arial, sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+h3{
+    font-size: 30px;
+}
+
+.button2{
+    display: inline-block; 
+    padding: 10px 20px; 
+    font-size: 16px; 
+    font-weight: bold; 
+    color: black;
+    background-color: rgb(148, 148, 212); 
+    border: 2px solid black;
+    border-radius: 5px; 
+    text-decoration: none; 
+    text-align: center;
+}
+
+.button2:hover{
+    background-color: rgb(45, 45, 106); 
+    color: white; 
+}
+
+/*Aggiunte al catalogo e Prenotazione*/
+.modulo2 {
+    font-family: Verdana, arial, sans-serif;
+    font-size: 20px;
+    margin-top: 24px;
+    margin-right: 15px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.modulo2 label{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-transform: none;
+    font-weight: bold;
+}
+
+.modulo2 input[type=text]{
+    width: 20%;
+    padding: 10px 16px;
+    margin: 4px 0;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+/*Messaggio di aggiunta  del libro*/
+#aggiunta {
+	padding: 10px;
+    font-family: Verdana, arial, sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+/*Eliminazione libro*/
+#elimina {
+    padding: 10px;
+    font-family: Verdana, arial, sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+/*scheda libro*/
+#descrizione {
+    padding: 10px;
+    font-family: Verdana, arial, sans-serif;
+    font-size: 20px;
+    text-align: left;
+}
+
+/*Pagina prenotazione*/
+#prenotazione {
+    padding: 10px;
+    font-family: Verdana, arial, sans-serif;
+    font-size: 20px;
+    text-align: left;
+}
+
+/*Messaggio di errore login e registrazione*/
+.messaggio {
+    padding: 10px;
+    font-family: Verdana, arial, sans-serif;
+    font-size: 15px;
+    text-align: left;
+}
